@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "my-hono-app",
-      script: "/home/ti-didin/.bun/bin/bun",
+      script: "bun",
       args: "run src/index.ts",
       interpreter: "none",
       cwd: "/home/ti-didin/test/my-hono-app/source",
@@ -22,7 +22,7 @@ module.exports = {
       repo: "https://github.com/didinsino/tes-pm2-deploy.git",
       path: "/home/ti-didin/test/my-hono-app",
       "pre-deploy-local": "",
-      "post-deploy": "/home/ti-didin/.bun/bin/bun install && /home/ti-didin/.nvm/versions/node/v24.4.0/bin/pm2 start bun --name my-hono-app --interpreter bun -- run src/index.ts || /home/ti-didin/.nvm/versions/node/v24.4.0/bin/pm2 restart my-hono-app",
+      "post-deploy": "bash scripts/deploy.sh",
       "pre-setup": "",
     },
   },
