@@ -4,7 +4,8 @@ module.exports = {
       name: "my-hono-app",
       script: "/home/ti-didin/.bun/bin/bun",
       args: "run src/index.ts",
-      interpreter: "bun",
+      interpreter: "none",
+      cwd: "/home/ti-didin/test/my-hono-app/source",
       env: {
         NODE_ENV: "production",
         PORT: 3000,
