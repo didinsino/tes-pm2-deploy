@@ -6,7 +6,7 @@ set -e  # stop jika ada error
 export PATH=$PATH:/home/ti-didin/.bun/bin:/usr/local/bin
 
 BUN=/home/ti-didin/.bun/bin/bun
-PM2=/usr/local/bin/pm2  # sesuaikan dengan hasil `which pm2`
+PM2=/home/ti-didin/.nvm/versions/node/v24.4.0/bin/pm2
 APP_NAME="my-hono-app"
 
 echo ">>> Installing dependencies..."
