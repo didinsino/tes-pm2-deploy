@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "my-hono-app",
-      script: "bun",
+      script: "/home/ti-didin/.bun/bin/bun",
       args: "run src/index.ts",
       interpreter: "none",
       env: {
