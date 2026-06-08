@@ -18,7 +18,7 @@ module.exports = {
       host: "192.168.191.103",
       port: "2222",
       ref: "origin/main",
-      repo: "git@github.com:didinsino/tes-pm2-deploy.git", // ganti dengan repo kamu
+      repo: "https://github.com/didinsino/tes-pm2-deploy.git",
       path: "/home/ti-didin/test/my-hono-app",
       "pre-deploy-local": "",
       "post-deploy":
