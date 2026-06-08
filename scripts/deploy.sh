@@ -3,11 +3,11 @@
 set -e
 
 # Load common PATH locations
-export PATH=$PATH:/home/ti-didin/.bun/bin:/usr/local/bin:/usr/bin
+export PATH=$PATH:/home/ti-didin/.bun/bin:/home/ti-didin/.nvm/versions/node/v24.4.0/bin
 
 # Ambil path dinamis
-BUN=$(which bun)
-PM2=$(which pm2)
+BUN=bun
+PM2=pm2
 
 # Validasi
 if [ -z "$BUN" ]; then
