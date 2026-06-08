@@ -1,12 +1,28 @@
 #!/bin/bash
 
-set -e  # stop jika ada error
+set -e
 
-# Load PATH
-export PATH=$PATH:/home/ti-didin/.bun/bin:/usr/local/bin
+# Load common PATH locations
+export PATH=$PATH:/home/ti-didin/.bun/bin:/usr/local/bin:/usr/bin
 
-BUN=bun
-PM2=pm2
+# Ambil path dinamis
+BUN=$(which bun)
+PM2=$(which pm2)
+
+# Validasi
+if [ -z "$BUN" ]; then
+  echo "ERROR: bun tidak ditemukan di PATH"
+  exit 1
+fi
+
+if [ -z "$PM2" ]; then
+  echo "ERROR: pm2 tidak ditemukan di PATH"
+  exit 1
+fi
+
+echo ">>> Menggunakan BUN  : $BUN"
+echo ">>> Menggunakan PM2  : $PM2"
+
 APP_NAME="my-hono-app"
 
 echo ">>> Installing dependencies..."
