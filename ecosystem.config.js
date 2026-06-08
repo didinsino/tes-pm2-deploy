@@ -21,7 +21,7 @@ module.exports = {
       repo: "https://github.com/didinsino/tes-pm2-deploy.git",
       path: "/home/ti-didin/test/my-hono-app",
       "pre-deploy-local": "",
-      "post-deploy": "/home/ti-didin/.bun/bin/bun install && pm2 reload ecosystem.config.js --env production",
+      "post-deploy": "/home/ti-didin/.bun/bin/bun install && /home/ti-didin/.nvm/versions/node/v24.4.0/bin/pm2 reload ecosystem.config.js --env production",
       "pre-setup": "",
     },
   },
