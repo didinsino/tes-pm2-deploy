@@ -3,7 +3,7 @@
 set -e
 
 # Load common PATH locations
-export PATH=$PATH:/home/ti-didin/.bun/bin:/home/ti-didin/.nvm/versions/node/v24.4.0/bin
+export PATH=$PATH:~/.bun/bin:~/.nvm/versions/node/v24.4.0/bin
 
 if [ -z "bun" ]; then
   echo "ERROR: bun tidak ditemukan di PATH"
